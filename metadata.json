@@ -1,0 +1,6 @@
+{
+  "name": "Tikiri Manike",
+  "description": "Discover Tikiri Manike, an authentic Sri Lankan brand offering organic spices & meals, bringing tradition to your table.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

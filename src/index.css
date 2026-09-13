@@ -1,0 +1,427 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
+
+@font-face {
+  font-family: 'Calder Dark';
+  src: url('/media/Calder-Dark.61d32d75.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('/media/CalSans-SemiBold.5dfb1d01.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-calder: 'Calder Dark', serif;
+  --font-calsans: 'Cal Sans', sans-serif;
+  --font-asul: 'Asul', serif;
+}
+
+@layer base {
+  :root {
+    --color-primary: #751629;
+    --color-tropics: #1c3a30;
+    --color-soil: #280e0f;
+    --color-offwhite: #f5eddb;
+    --color-clay: #9f9383;
+    --color-navy: #0f1c25;
+    --color-darkbrown: #9f8b7e;
+    --color-mustard: #dab427;
+    --color-sand: #e6d9c2;
+  }
+
+  body {
+    background-color: #f5eddb;
+    color: #280e0f;
+    font-family: 'Asul', serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Calder Dark', serif;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Cal Sans', sans-serif;
+  }
+
+  p {
+    font-family: 'Asul', serif;
+  }
+
+  button, input, select, textarea {
+    font-family: 'Cal Sans', sans-serif;
+  }
+}
+
+/* Custom Typography matching original site */
+.font-asul, .asul {
+  font-family: 'Asul', serif !important;
+}
+
+.font-calsans, .calsans {
+  font-family: 'Cal Sans', sans-serif !important;
+}
+
+.font-calder, .calder-dark {
+  font-family: 'Calder Dark', serif !important;
+}
+
+/* Original Site Semantic Classes */
+.subheading {
+  font-family: 'Cal Sans', sans-serif !important;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.title {
+  font-family: 'Asul', serif !important;
+  font-size: 3.75rem;
+}
+
+.title-alt {
+  font-family: 'Calder Dark', serif !important;
+  font-size: 5rem;
+}
+
+.body {
+  font-family: 'Asul', serif !important;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+.label {
+  font-family: 'Cal Sans', sans-serif !important;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.28688rem;
+  text-transform: uppercase;
+}
+
+.button, .btn {
+  font-family: 'Cal Sans', sans-serif !important;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.prod-title {
+  font-family: 'Cal Sans', sans-serif !important;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.09rem;
+}
+
+.prod-text {
+  font-family: 'Asul', serif !important;
+  font-size: 1rem;
+}
+
+/* Colors utility helpers */
+.text-primary-brand { color: #751629; }
+.text-tropics { color: #1c3a30; }
+.text-soil { color: #280e0f; }
+.text-offwhite { color: #f5eddb; }
+.text-clay { color: #9f9383; }
+.text-navy { color: #0f1c25; }
+.text-darkbrown { color: #9f8b7e; }
+.text-mustard { color: #dab427; }
+.text-sand { color: #e6d9c2; }
+
+.bg-primary-brand { background-color: #751629; }
+.bg-tropics { background-color: #1c3a30; }
+.bg-soil { background-color: #280e0f; }
+.bg-offwhite { background-color: #f5eddb; }
+.bg-clay { background-color: #9f9383; }
+.bg-navy { background-color: #0f1c25; }
+.bg-mustard { background-color: #dab427; }
+.bg-sand { background-color: #e6d9c2; }
+
+.border-primary-brand { border-color: #751629; }
+.border-soil { border-color: #280e0f; }
+.border-sand { border-color: #e6d9c2; }
+.border-offwhite { border-color: #f5eddb; }
+
+/* Buttons mirroring original tikirimanike styles */
+.btn-primary-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.88rem 1.8rem;
+  border-radius: 1.875rem;
+  background-color: #280e0f;
+  color: #f5eddb;
+  border: 2px solid #280e0f;
+  font-family: 'Cal Sans', sans-serif !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary-custom:hover {
+  background-color: transparent;
+  color: #280e0f;
+}
+
+.btn-primary-alt-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.88rem 1.8rem;
+  border-radius: 1.875rem;
+  background-color: #280e0f;
+  color: #f5eddb;
+  border: 2px solid #280e0f;
+  font-family: 'Cal Sans', sans-serif !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary-alt-custom:hover {
+  background-color: #f5eddb;
+  color: #280e0f;
+  border-color: #f5eddb;
+}
+
+.btn-secondary-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.8rem;
+  border-radius: 1.875rem;
+  background-color: transparent;
+  color: #280e0f;
+  border: 2px solid #280e0f;
+  font-family: 'Cal Sans', sans-serif !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-secondary-custom:hover {
+  background-color: #280e0f;
+  color: #f5eddb;
+}
+
+.btn-secondary2-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.8rem;
+  border-radius: 1.875rem;
+  background-color: transparent;
+  color: #f5eddb;
+  border: 2px solid #f5eddb;
+  font-family: 'Cal Sans', sans-serif !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-secondary2-custom:hover {
+  background-color: #f5eddb;
+  color: #280e0f;
+}
+
+.btn-tertiary-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2.8rem;
+  border-radius: 1.875rem;
+  background-color: #f5eddb;
+  color: #280e0f;
+  border: 2px solid #f5eddb;
+  font-family: 'Cal Sans', sans-serif !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.04rem;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-tertiary-custom:hover {
+  background-color: transparent;
+  color: #f5eddb;
+}
+
+/* Animated Hamburger toggle */
+.button_container {
+  position: relative;
+  height: 27px;
+  width: 32px;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.button_container span {
+  background: #280e0f;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+.button_container.active span.top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+}
+.button_container.active span.middle {
+  opacity: 0;
+}
+.button_container.active span.bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+}
+
+/* Fullscreen mobile overlay */
+.mobile-overlay {
+  position: fixed;
+  background: #f5eddb;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow-y: auto;
+  z-index: 90;
+}
+.mobile-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+}
+
+/* Bio background frame */
+.bio-frame {
+  background-color: #e6d9c2;
+  box-shadow: 0 0 0 1.5rem #e6d9c2;
+}
+
+/* Infinite marquee textPath */
+@keyframes marqueeShift {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-smooth {
+  display: flex;
+  width: max-content;
+  animation: marqueeShift 28s linear infinite;
+}
+
+/* Authentic Wave Strip Marquee */
+#marquee {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-top: -45px;
+  margin-bottom: -45px;
+  width: 100%;
+  height: 90px;
+  z-index: 30;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.marquee_light {
+  background-image: url('/media/marquee-wave.46075c83.svg');
+}
+
+.marquee_dark {
+  background-image: url('/media/marquee-wave_dark.d32e8017.svg');
+}
+
+#textPath {
+  stroke: none !important;
+  fill: transparent !important;
+}
+
+#marquee svg {
+  width: 100%;
+  height: 90px;
+  overflow: visible;
+}
+
+#marquee text {
+  font-family: 'Calder Dark', system-ui, sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  word-spacing: 1.8rem;
+}
+
+.marquee_light text {
+  fill: #0f1c25;
+}
+
+.marquee_dark text {
+  fill: #f5eddb;
+}
+
+@media only screen and (max-width: 600px) {
+  #marquee {
+    display: none !important;
+  }
+}
+
+/* Footer Navigation Underline Hover Animation */
+#footer .footer-menu ul li a,
+#footer .footer-menu ul li button {
+  color: #280e0f;
+  text-decoration: none;
+  width: fit-content;
+  display: block;
+  position: relative;
+}
+
+#footer .footer-menu ul li a:after,
+#footer .footer-menu ul li button:after {
+  transition: all 0.2s ease-in-out;
+  background: #280e0f;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+}
+
+#footer .footer-menu ul li a:hover:after,
+#footer .footer-menu ul li button:hover:after {
+  width: 100%;
+}
+
